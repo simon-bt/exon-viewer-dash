@@ -7,7 +7,7 @@ from callbacks.inclusion_plots import *
 from callbacks.dpsi_plots import *
 from callbacks.supplementary_plots import *
 from layouts import header, sidebar,viewer
-
+import gunicorn
 
 app.layout = html.Div(
     [
@@ -47,6 +47,8 @@ app.layout = html.Div(
             id='contents'
         )
     ])
+
+server = app.server
 
 if __name__ == '__main__':
     app.run_server(debug=False)
