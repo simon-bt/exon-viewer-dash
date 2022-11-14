@@ -7,7 +7,7 @@ from callbacks.inclusion_plots import *
 from callbacks.dpsi_plots import *
 from callbacks.supplementary_plots import *
 from layouts import header, sidebar,viewer
-import gunicorn
+
 
 app.layout = html.Div(
     [
