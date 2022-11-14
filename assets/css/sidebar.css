@@ -1,0 +1,94 @@
+/* Sidebar */
+#sidebar {
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 0;
+    height: 650px;
+    background-color: var(--lighgrey);
+    border-right: 5px solid var(--darkgrey);
+}
+
+.sidebar-tab {
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 10px 5px !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+    border-top: transparent !important;
+    border-right: transparent !important;
+    border-left: transparent !important;
+    border-bottom: 2px solid var(--darkgrey) !important;
+}
+
+.sidebar-tab::before,
+.sidebar-tab::after {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    -moz-transition: -moz-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.sidebar-tab::before {
+    margin-right: 5px;
+    content: '[ ';
+    transform: translate(20px);
+}
+
+.sidebar-tab::after {
+    margin-left: 5px;
+    content: ' ]';
+    transform: translate(-20px);
+}
+
+.sidebar-tab:hover,
+.sidebar-tab:hover::before,
+.sidebar-tab:hover::after,
+.sidebar-tab:focus::before,
+.sidebar-tab:focus::after {
+    color: var(--teal);
+    background-color: transparent;
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.tab-content {
+    margin-top: 10px;
+    height: 500px;
+    width: 100%;
+    padding: 0 2.5%;
+    overflow-y: scroll;
+}
+
+
+.upload-button,
+#drawer-button,
+#download-button {
+    background-color: var(--lightteal);
+    width: 100%;
+    height: 50px;
+    box-shadow: 1px 0.5px 10px darkgray;
+    border-radius: 5px;
+    border: 2px solid var(--darkgrey);
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-button:hover,
+#drawer-button:hover,
+#download-button:hover {
+    background-color: mintcream;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.button-text,
+.icon-text {
+    color: var(--darkgrey);
+}
+

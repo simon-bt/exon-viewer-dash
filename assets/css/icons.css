@@ -1,0 +1,23 @@
+/* Icons */
+.info-icon {
+    position: absolute;
+    top: 0;
+    left: 99%;
+}
+
+.icon {
+    color: var(--darkgrey);
+    margin: 0;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon-text {
+    font-size: 0.9rem;
+}
+
+.icon:hover {
+    color: var(--lightteal);
+    transition-duration: 0.3s;
+}
+

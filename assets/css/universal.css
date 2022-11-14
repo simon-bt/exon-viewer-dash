@@ -1,0 +1,30 @@
+/* Universal */
+:root {
+    --teal: #006170;
+    --lightteal: #99cccc;
+    --darkgrey: #1d1f20;
+    --lighgrey: #f7f7f8;
+    scroll-behavior: auto;
+    font-size: 16px;
+
+}
+
+html {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bolder;
+    color: var(--teal);
+}
+
+/*p {*/
+/*    color: var(--darkgrey);*/
+/*}*/

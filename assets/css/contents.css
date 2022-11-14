@@ -1,0 +1,15 @@
+#contents {
+    margin-top: 100px;
+}
+
+#viewer {
+    margin-top: 25px;
+    margin-right: 0 !important;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.card {
+    width: 350px;
+    border: 3px solid var(--darkgrey);
+}
