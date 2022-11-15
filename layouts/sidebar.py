@@ -27,10 +27,11 @@ sidebar = html.Div(
                                                     With a few clicks, generate report-ready figures that summarise your experiment and download
                                                     processed data for your records! 
 
-                                                    **ExonViewer** currently supports three species:
+                                                    **ExonViewer** currently supports four species:
 
                                                     * Homo sapiens (_VastDB v. hg38_)
                                                     * Mus musculus (_VastDB v. mm10_)
+                                                    * Rattus norvegicus (_VastDB v. rn6_)
                                                     * Danio rerio  (_VastDB v. danRer10_)
 
                                                     Data available from [VastDB, v3](https://vastdb.crg.eu/wiki/Downloads).
@@ -197,7 +198,9 @@ sidebar = html.Div(
                                             dbc.Col(
                                                 [
                                                     dcc.Dropdown(id='select-species',
-                                                                 options=['Homo_sapiens', 'Mus_musculus',
+                                                                 options=['Homo_sapiens',
+                                                                          'Mus_musculus',
+                                                                          'Rattus_norvegicus',
                                                                           'Danio_rerio'],
                                                                  value='Homo_sapiens')]
                                             ),
