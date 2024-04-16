@@ -10,5 +10,3 @@
 * _Danio rerio_  (VastDB v. danRer10)
 
 Data available from [VastDB, v3](https://vastdb.crg.eu/wiki/Downloads).
-
-The app is hosted on Render: https://exon-viewer-dash.onrender.com
